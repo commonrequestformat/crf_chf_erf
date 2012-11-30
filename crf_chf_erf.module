@@ -1,0 +1,21 @@
+<?php
+/**
+ * @file
+ * Code for the CRF CHF/ERF feature.
+ */
+
+include_once 'crf_chf_erf.features.inc';
+
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function crf_chf_erf_form_chf_erf_node_form_alter(&$form, &$form_state, $form_id) {
+  if (isset($_GET['edit']['field_nc_request']['und'])) {
+    $request_nid = $_GET['edit']['field_nc_request']['und'];
+    $request_node = node_load($request_nid);    
+    $form['instruction'] = array(
+      '#markup' => $request_node->field_chf_erf_instructions['und'][0]['value'],
+    );
+  }
+}
