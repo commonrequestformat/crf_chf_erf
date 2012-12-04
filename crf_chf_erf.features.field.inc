@@ -298,100 +298,6 @@ function crf_chf_erf_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-chf_erf-field_pbc_info_offcrs_contacts'.
-  $fields['node-chf_erf-field_pbc_info_offcrs_contacts'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '-1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_pbc_info_offcrs_contacts',
-      'field_permissions' => array(
-        'type' => '0',
-      ),
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(),
-        ),
-        'target_type' => 'user',
-      ),
-      'translatable' => '0',
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'chf_erf',
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'diff_custom' => 0,
-            'diff_custom_settings' => array(),
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 4,
-        ),
-        'entityreference_view_widget' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_pbc_info_offcrs_contacts',
-      'label' => 'Public Info Officers',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference_view_widget',
-        'settings' => array(
-          'pass_argument' => 0,
-          'view' => 'public_info_officers|entityreference_view_widget_1',
-        ),
-        'type' => 'entityreference_view_widget',
-        'weight' => '6',
-      ),
-      'workbench_access_field' => 0,
-    ),
-  );
-
   // Exported field: 'node-non_cluster_request-field_chf_erf_instructions'.
   $fields['node-non_cluster_request-field_chf_erf_instructions'] = array(
     'field_config' => array(
@@ -604,7 +510,6 @@ function crf_chf_erf_field_default_fields() {
   t('File');
   t('Instructions');
   t('Link');
-  t('Public Info Officers');
   t('Request');
 
   return $fields;
