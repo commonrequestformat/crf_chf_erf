@@ -21,7 +21,7 @@ function crf_chf_erf_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'CHF/ERF',
-    'weight' => '10',
+    'weight' => '7',
     'children' => array(
       0 => 'field_chf_erf_instructions',
       1 => 'field_chf_erf_link',
