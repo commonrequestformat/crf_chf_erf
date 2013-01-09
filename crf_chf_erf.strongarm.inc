@@ -14,7 +14,7 @@ function crf_chf_erf_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_chf_erf';
-  $strongarm->value = 'edit-print';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_chf_erf'] = $strongarm;
 
   $strongarm = new stdClass();

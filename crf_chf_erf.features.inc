@@ -24,7 +24,7 @@ function crf_chf_erf_ctools_plugin_api() {
 function crf_chf_erf_node_info() {
   $items = array(
     'chf_erf' => array(
-      'name' => t('CHF/ERF'),
+      'name' => t('CHF/ERF Information'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
