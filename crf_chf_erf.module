@@ -17,10 +17,14 @@ function crf_chf_erf_form_chf_erf_node_form_alter(&$form, &$form_state, $form_id
       $request_nid = $_GET['edit']['field_nc_request']['und'];
       $request_node = node_load($request_nid);    
       $form['instruction'] = array(
-        '#markup' => $request_node->field_chf_erf_instructions['und'][0]['value'],
+        '#markup' => '<p>' . $request_node->field_chf_erf_instructions['und'][0]['value'] . '</p>',
       );
+      if (isset($request_node->field_chf_erf_link['und'][0]['title']) && isset($request_node->field_chf_erf_link['und'][0]['url'])) {
+        $form['link'] = array(
+          '#markup' => '<p>' . l($request_node->field_chf_erf_link['und'][0]['title'], 'http://' . $request_node->field_chf_erf_link['und'][0]['url']) . '</p>',
+        );
+      }
     }
-    
     $form['actions']['submit']['#value'] = t('Submit to OCHA');
   }
 }
