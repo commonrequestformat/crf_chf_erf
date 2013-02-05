@@ -14,9 +14,9 @@ function crf_chf_erf_user_default_permissions() {
   $permissions['create chf_erf content'] = array(
     'name' => 'create chf_erf content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -25,8 +25,8 @@ function crf_chf_erf_user_default_permissions() {
   $permissions['delete any chf_erf content'] = array(
     'name' => 'delete any chf_erf content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -35,9 +35,9 @@ function crf_chf_erf_user_default_permissions() {
   $permissions['delete own chf_erf content'] = array(
     'name' => 'delete own chf_erf content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -46,8 +46,8 @@ function crf_chf_erf_user_default_permissions() {
   $permissions['edit any chf_erf content'] = array(
     'name' => 'edit any chf_erf content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -56,9 +56,9 @@ function crf_chf_erf_user_default_permissions() {
   $permissions['edit own chf_erf content'] = array(
     'name' => 'edit own chf_erf content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -67,8 +67,8 @@ function crf_chf_erf_user_default_permissions() {
   $permissions['view any unpublished chf_erf content'] = array(
     'name' => 'view any unpublished chf_erf content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'view_unpublished',
   );
