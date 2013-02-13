@@ -19,7 +19,6 @@ dependencies[] = view_unpublished
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
-features[field][] = node-chf_erf-field_comments
 features[field][] = node-chf_erf-field_file
 features[field][] = node-chf_erf-field_nc_request
 features[field][] = node-non_cluster_request-field_chf_erf_instructions
